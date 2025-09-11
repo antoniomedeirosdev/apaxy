@@ -37,8 +37,11 @@ IndexOptions +Charset=UTF-8 +FancyIndexing +FoldersFirst +HTMLTable +IconsAreLin
 
 # favicon & meta viewport
 IndexHeadInsert "\
-        <link rel=\"shortcut icon\" href=\"https://antoniomedeirosdev.github.io/apaxy/theme/favicon.ico\" />\
-        <meta name=\"viewport\" content=\"width=device-width, initial-scale=1\" />"
+        <meta charset='utf-8'>\
+        <meta name='viewport' content='width=device-width, initial-scale=1'>\
+        <link rel='shortcut icon' href='https://antoniomedeirosdev.github.io/apaxy/theme/favicon.ico' />\
+        <link rel='stylesheet' href='https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css' integrity='sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB' crossorigin='anonymous'>\
+        <link rel='stylesheet' href='https://cdn.jsdelivr.net/npm/bootstrap-icons@1.13.1/font/bootstrap-icons.min.css'>"
 
 # hide ".htaccess" file and "/theme" directory
 IndexIgnore .htaccess /theme
@@ -437,9 +440,9 @@ DefaultIcon https://antoniomedeirosdev.github.io/apaxy/theme/icons/empty.svg
 # theme files
 #
 
-HeaderName https://antoniomedeirosdev.github.io/apaxy/theme/header.html
-ReadmeName https://antoniomedeirosdev.github.io/apaxy/theme/footer.html
-IndexStyleSheet https://antoniomedeirosdev.github.io/apaxy/theme/style.css
+HeaderName {FOLDERNAME}/theme/header.html
+ReadmeName {FOLDERNAME}/theme/footer.html
+#IndexStyleSheet https://antoniomedeirosdev.github.io/apaxy/theme/style.css
 
 
 #
