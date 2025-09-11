@@ -43,6 +43,9 @@ IndexHeadInsert "\
 # hide ".htaccess" file and "/theme" directory
 IndexIgnore .htaccess /theme
 
+# Do not list hidden files
+IndexIgnore .??* *~ # This ignores files starting with a dot and files ending with a tilde
+
 
 #
 # general icons (blank, directory, parent directory)
