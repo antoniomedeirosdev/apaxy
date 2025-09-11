@@ -71,6 +71,19 @@ AddIcon https://antoniomedeirosdev.github.io/apaxy/theme/icons/user-home.svg ..
 #
 
 
+
+#
+# Arch Linux / Manjaro
+#
+
+AddIcon https://antoniomedeirosdev.github.io/apaxy/theme/icons/text-x-sql.svg .db
+
+AddIcon https://antoniomedeirosdev.github.io/apaxy/theme/icons/application-x-tar.svg .files
+
+AddIcon https://antoniomedeirosdev.github.io/apaxy/theme/icons/package-x-generic.svg .pkg.tar.zst
+
+
+
 #
 # image
 #
