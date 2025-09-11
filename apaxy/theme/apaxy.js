@@ -100,5 +100,10 @@ arr.forEach(function(value){
 document.getElementById("breadcrumb").innerHTML = bread;
 
 // Bootstrap's tables are opt-in
-var table = document.getElementById("indexlist");
+const tables = document.getElementsByTagName("table");
+const table = tables[0];
 table.classList.add("table");
+table.classList.add("table-striped");
+table.classList.add("table-hover");
+
+document.querySelector("th[valign='top']").innerHTML = '';
