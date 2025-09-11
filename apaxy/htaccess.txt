@@ -37,7 +37,7 @@ IndexOptions +Charset=UTF-8 +FancyIndexing +FoldersFirst +HTMLTable +IconsAreLin
 
 # favicon & meta viewport
 IndexHeadInsert "\
-        <link rel=\"shortcut icon\" href=\"{FOLDERNAME}/theme/favicon.ico\" />\
+        <link rel=\"shortcut icon\" href=\"https://antoniomedeirosdev.github.io/apaxy/theme/favicon.ico\" />\
         <meta name=\"viewport\" content=\"width=device-width, initial-scale=1\" />"
 
 # hide ".htaccess" file and "/theme" directory
@@ -56,9 +56,9 @@ IndexIgnore .htaccess /theme
 # AddIcon /share/theme/icons/empty.svg ^^BLANKICON^^
 #
 
-AddIcon {FOLDERNAME}/theme/icons/empty.svg ^^BLANKICON^^
-AddIcon {FOLDERNAME}/theme/icons/folder.svg ^^DIRECTORY^^
-AddIcon {FOLDERNAME}/theme/icons/user-home.svg ..
+AddIcon https://antoniomedeirosdev.github.io/apaxy/theme/icons/empty.svg ^^BLANKICON^^
+AddIcon https://antoniomedeirosdev.github.io/apaxy/theme/icons/folder.svg ^^DIRECTORY^^
+AddIcon https://antoniomedeirosdev.github.io/apaxy/theme/icons/user-home.svg ..
 
 #
 # unused icons (that should be soon removed)
@@ -73,36 +73,36 @@ AddIcon {FOLDERNAME}/theme/icons/user-home.svg ..
 #
 
 # ext: ai eps ps
-AddIconByType (ps,{FOLDERNAME}/theme/icons/image-x-eps.svg) application/postscript
+AddIconByType (ps,https://antoniomedeirosdev.github.io/apaxy/theme/icons/image-x-eps.svg) application/postscript
 
 # ext: bmp
-AddIconByType (bmp,{FOLDERNAME}/theme/icons/image-bmp.svg) image/bmp
+AddIconByType (bmp,https://antoniomedeirosdev.github.io/apaxy/theme/icons/image-bmp.svg) image/bmp
 
 # ext: gif
-AddIconByType (gif,{FOLDERNAME}/theme/icons/image-gif.svg) image/gif
+AddIconByType (gif,https://antoniomedeirosdev.github.io/apaxy/theme/icons/image-gif.svg) image/gif
 
 # ext: ico
-AddIconByType (ico,{FOLDERNAME}/theme/icons/image-x-ico.svg) image/x-icon
+AddIconByType (ico,https://antoniomedeirosdev.github.io/apaxy/theme/icons/image-x-ico.svg) image/x-icon
 
 # ext: jpg jpeg jpe
-AddIconByType (jpg,{FOLDERNAME}/theme/icons/image-jpeg.svg) image/jpeg
+AddIconByType (jpg,https://antoniomedeirosdev.github.io/apaxy/theme/icons/image-jpeg.svg) image/jpeg
 
 # ext: png
-AddIconByType (png,{FOLDERNAME}/theme/icons/image-png.svg) image/png
+AddIconByType (png,https://antoniomedeirosdev.github.io/apaxy/theme/icons/image-png.svg) image/png
 
 # ext: psd
-AddIconByType (psd,{FOLDERNAME}/theme/icons/image-x-psd.svg) image/vnd.adobe.photoshop
+AddIconByType (psd,https://antoniomedeirosdev.github.io/apaxy/theme/icons/image-x-psd.svg) image/vnd.adobe.photoshop
 
 # ext: svg svgz
-AddIconByType (draw,{FOLDERNAME}/theme/icons/x-office-drawing.svg) image/svg+xml
+AddIconByType (draw,https://antoniomedeirosdev.github.io/apaxy/theme/icons/x-office-drawing.svg) image/svg+xml
 
 # ext: tiff tif
-AddIconByType (tiff,{FOLDERNAME}/theme/icons/image-tiff.svg) image/tiff
+AddIconByType (tiff,https://antoniomedeirosdev.github.io/apaxy/theme/icons/image-tiff.svg) image/tiff
 
 # xcf media type not yet included in apache, fallback to AddIcon
 # ext: xcf
-#AddIconByType (xcf,{FOLDERNAME}/theme/icons/image-x-xcf.svg) image/x-xcf
-AddIcon {FOLDERNAME}/theme/icons/image-x-xcf.svg .xcf
+#AddIconByType (xcf,https://antoniomedeirosdev.github.io/apaxy/theme/icons/image-x-xcf.svg) image/x-xcf
+AddIcon https://antoniomedeirosdev.github.io/apaxy/theme/icons/image-x-xcf.svg .xcf
 
 # all other images
 # ext: bmp cgm g3 gif ief jpeg jpg jpe ktx png btif sgi svg svgz tiff tif psd uvi uvvi uvg uvvg djvu djv sub dwg dxf fbs fpx fst mmr rlc mdi wdp npx wbmp xif webp 3ds ras cmx fh fhc fh4 fh5 fh7 ico sid pcx pic pct pnm pbm pgm ppm rgb tga xbm xpm xwd
@@ -110,7 +110,7 @@ AddIcon {FOLDERNAME}/theme/icons/image-x-xcf.svg .xcf
 # ext: otg
 # ext: odi
 # ext: oti
-AddIconByType (image,{FOLDERNAME}/theme/icons/image-x-generic.svg) image/* \
+AddIconByType (image,https://antoniomedeirosdev.github.io/apaxy/theme/icons/image-x-generic.svg) image/* \
                                                                    application/vnd.oasis.opendocument.graphics \
                                                                    application/vnd.oasis.opendocument.graphics-template \
                                                                    application/vnd.oasis.opendocument.image \
@@ -125,13 +125,13 @@ AddIconByType (image,{FOLDERNAME}/theme/icons/image-x-generic.svg) image/* \
 # ext: m3u
 # ext: m3u8
 # ext: pls
-AddIconByType (playlist,{FOLDERNAME}/theme/icons/audio-x-mp3-playlist.svg) audio/x-mpegurl \
+AddIconByType (playlist,https://antoniomedeirosdev.github.io/apaxy/theme/icons/audio-x-mp3-playlist.svg) audio/x-mpegurl \
                                                                            application/vnd.apple.mpegurl \
                                                                            application/pls+xml
 
 # all audio
 # ext: adp au snd mid midi kar rmi m4a mp4a mpga mp2 mp2a mp3 m2a m3a oga ogg spx s3m sil uva uvva eol dra dts dtshd lvp pya ecelp4800 ecelp7470 ecelp9600 rip weba aac aif aiff aifc caf flac mka m3u wax wma xm rmp ram ra wav
-AddIconByType (audio,{FOLDERNAME}/theme/icons/audio-x-generic.svg) audio/*
+AddIconByType (audio,https://antoniomedeirosdev.github.io/apaxy/theme/icons/audio-x-generic.svg) audio/*
 
 
 #
@@ -140,11 +140,11 @@ AddIconByType (audio,{FOLDERNAME}/theme/icons/audio-x-generic.svg) audio/*
 
 # video playlist
 # ext: mxu m4u
-AddIconByType (playlist,{FOLDERNAME}/theme/icons/video-x-generic.svg) video/vnd.mpegurl
+AddIconByType (playlist,https://antoniomedeirosdev.github.io/apaxy/theme/icons/video-x-generic.svg) video/vnd.mpegurl
 
 # all video
 # ext: 3g2 3gp h261 h263 h264 jpgv jpm jpgm mj2 mjp2 mp4 mp4v mpg4 mpeg mpg mpe m1v m2v ogv qt mov uvh uvvh uvm uvvm uvp uvvp uvs uvvs uvv uvvv dvb fvt mxu m4u pyv uvu uvvu viv webm f4v fli flv m4v mkv mk3d mks mng asf asx avi vob wmv wm wmx wvx movie smv
-AddIconByType (video,{FOLDERNAME}/theme/icons/video-x-generic.svg) video/*
+AddIconByType (video,https://antoniomedeirosdev.github.io/apaxy/theme/icons/video-x-generic.svg) video/*
 
 
 #
@@ -154,27 +154,27 @@ AddIconByType (video,{FOLDERNAME}/theme/icons/video-x-generic.svg) video/*
 # ext: html htm
 # ext: xhtml xht
 # ext: uri uris urls
-AddIconByType (html,{FOLDERNAME}/theme/icons/text-html.svg) text/html \
+AddIconByType (html,https://antoniomedeirosdev.github.io/apaxy/theme/icons/text-html.svg) text/html \
                                                             application/xhtml+xml \
                                                             text/uri-list
 
 # ext: rss
 # ext: atom
-AddIconByType (rss,{FOLDERNAME}/theme/icons/application-rss+xml.svg) application/rss+xml \
+AddIconByType (rss,https://antoniomedeirosdev.github.io/apaxy/theme/icons/application-rss+xml.svg) application/rss+xml \
                                                                      application/atom+xml
 
 # ext: ics ifb
 # ext: vcs
-AddIconByType (vcal,{FOLDERNAME}/theme/icons/evolution-calendar.svg) text/calendar \
+AddIconByType (vcal,https://antoniomedeirosdev.github.io/apaxy/theme/icons/evolution-calendar.svg) text/calendar \
                                                                      text/x-vcalendar
 
 # ext: vcard
 # ext: vcf
-AddIconByType (vcard,{FOLDERNAME}/theme/icons/addressbook.svg) text/vcard \
+AddIconByType (vcard,https://antoniomedeirosdev.github.io/apaxy/theme/icons/addressbook.svg) text/vcard \
                                                                text/x-vcard
 
 # ext: torrent
-AddIconByType (torrent,{FOLDERNAME}/theme/icons/application-x-bittorrent.svg) application/x-bittorrent
+AddIconByType (torrent,https://antoniomedeirosdev.github.io/apaxy/theme/icons/application-x-bittorrent.svg) application/x-bittorrent
 
 
 #
@@ -190,7 +190,7 @@ AddIconByType (torrent,{FOLDERNAME}/theme/icons/application-x-bittorrent.svg) ap
 # ext: csv
 # ext: xls xlm xla xlc xlt xlw
 # ext: xlsx
-AddIconByType (calc,{FOLDERNAME}/theme/icons/x-office-spreadsheet.svg) application/vnd.oasis.opendocument.chart \
+AddIconByType (calc,https://antoniomedeirosdev.github.io/apaxy/theme/icons/x-office-spreadsheet.svg) application/vnd.oasis.opendocument.chart \
                                                                        application/vnd.oasis.opendocument.chart-template \
                                                                        application/vnd.oasis.opendocument.formula \
                                                                        application/vnd.oasis.opendocument.formula-template \
@@ -206,7 +206,7 @@ AddIconByType (calc,{FOLDERNAME}/theme/icons/x-office-spreadsheet.svg) applicati
 # ext: oth
 # ext: doc dot
 # ext: docx
-AddIconByType (doc,{FOLDERNAME}/theme/icons/x-office-document.svg) application/vnd.oasis.opendocument.text \
+AddIconByType (doc,https://antoniomedeirosdev.github.io/apaxy/theme/icons/x-office-document.svg) application/vnd.oasis.opendocument.text \
                                                                    application/vnd.oasis.opendocument.text-master \
                                                                    application/vnd.oasis.opendocument.text-template \
                                                                    application/vnd.oasis.opendocument.text-web \
@@ -218,7 +218,7 @@ AddIconByType (doc,{FOLDERNAME}/theme/icons/x-office-document.svg) application/v
 # ext: ppt pps pot
 # ext: pptx
 # ext: ppsx
-AddIconByType (slideshow,{FOLDERNAME}/theme/icons/x-office-presentation.svg) application/vnd.oasis.opendocument.presentation \
+AddIconByType (slideshow,https://antoniomedeirosdev.github.io/apaxy/theme/icons/x-office-presentation.svg) application/vnd.oasis.opendocument.presentation \
                                                                              application/vnd.oasis.opendocument.presentation-template \
                                                                              application/vnd.ms-powerpoint \
                                                                              application/vnd.openxmlformats-officedocument.presentationml.presentation \
@@ -226,18 +226,18 @@ AddIconByType (slideshow,{FOLDERNAME}/theme/icons/x-office-presentation.svg) app
 
 # ext: mdb
 # ext: odb
-AddIconByType (database,{FOLDERNAME}/theme/icons/text-x-sql.svg) application/x-msaccess \
+AddIconByType (database,https://antoniomedeirosdev.github.io/apaxy/theme/icons/text-x-sql.svg) application/x-msaccess \
                                                                  application/vnd.oasis.opendocument.database
 
 # ext: pdf
-AddIconByType (pdf,{FOLDERNAME}/theme/icons/application-pdf.svg) application/pdf
+AddIconByType (pdf,https://antoniomedeirosdev.github.io/apaxy/theme/icons/application-pdf.svg) application/pdf
 
 # ext: rtf
-AddIconByType (rtf,{FOLDERNAME}/theme/icons/text-richtext.svg) application/rtf
+AddIconByType (rtf,https://antoniomedeirosdev.github.io/apaxy/theme/icons/text-richtext.svg) application/rtf
 
 # ext: latex
 # ext: tex
-AddIconByType (tex,{FOLDERNAME}/theme/icons/text-x-tex.svg) application/x-latex \
+AddIconByType (tex,https://antoniomedeirosdev.github.io/apaxy/theme/icons/text-x-tex.svg) application/x-latex \
                                                             application/x-tex
 
 
@@ -247,65 +247,65 @@ AddIconByType (tex,{FOLDERNAME}/theme/icons/text-x-tex.svg) application/x-latex 
 
 # h media type not yet included in apache, fallback to AddIcon
 # ext: h
-#AddIconByType (h,{FOLDERNAME}/theme/icons/text-x-chdr.svg) text/x-h
-AddIcon {FOLDERNAME}/theme/icons/text-x-chdr.svg .h
+#AddIconByType (h,https://antoniomedeirosdev.github.io/apaxy/theme/icons/text-x-chdr.svg) text/x-h
+AddIcon https://antoniomedeirosdev.github.io/apaxy/theme/icons/text-x-chdr.svg .h
 
 # hpp files do not have a specific media type, fallback to AddIcon
 # ext: hpp
-AddIcon {FOLDERNAME}/theme/icons/text-x-c++hdr.svg .hpp
+AddIcon https://antoniomedeirosdev.github.io/apaxy/theme/icons/text-x-c++hdr.svg .hpp
 
 # cpp files do not have a specific media type, fallback to AddIcon
 # ext: cpp
-AddIcon {FOLDERNAME}/theme/icons/text-x-c++.svg .cpp
+AddIcon https://antoniomedeirosdev.github.io/apaxy/theme/icons/text-x-c++.svg .cpp
 
 # ext: c cc cxx cpp h hh dic
-AddIconByType (c,{FOLDERNAME}/theme/icons/text-x-c.svg) text/x-c
+AddIconByType (c,https://antoniomedeirosdev.github.io/apaxy/theme/icons/text-x-c.svg) text/x-c
 
 # ext: java
 # ext: jar
 # ext: class
-AddIconByType (java,{FOLDERNAME}/theme/icons/text-x-java.svg) text/x-java-source \
+AddIconByType (java,https://antoniomedeirosdev.github.io/apaxy/theme/icons/text-x-java.svg) text/x-java-source \
                                                               application/java-archive \
                                                               application/java-vm
 
 # sass and scss files do not have a specific media type, fallback to AddIcon
 # ext: sass scss
-AddIcon {FOLDERNAME}/theme/icons/text-css.svg .sass .scss
+AddIcon https://antoniomedeirosdev.github.io/apaxy/theme/icons/text-css.svg .sass .scss
 
 # ext: css
-AddIconByType (css,{FOLDERNAME}/theme/icons/text-css.svg) text/css
+AddIconByType (css,https://antoniomedeirosdev.github.io/apaxy/theme/icons/text-css.svg) text/css
 
 # ext: js
 # ext: json
-AddIconByType (js,{FOLDERNAME}/theme/icons/text-x-javascript.svg) application/javascript \
+AddIconByType (js,https://antoniomedeirosdev.github.io/apaxy/theme/icons/text-x-javascript.svg) application/javascript \
                                                                   application/json
 
 # diff and patch files do not have a specific media type, fallback to AddIcon
 # ext: diff patch
-AddIcon {FOLDERNAME}/theme/icons/text-x-source.svg .diff .patch
+AddIcon https://antoniomedeirosdev.github.io/apaxy/theme/icons/text-x-source.svg .diff .patch
 
 # makefile files do not have a specific media type, fallback to AddIcon
 # ext: Makefile
-AddIcon {FOLDERNAME}/theme/icons/text-x-makefile.svg Makefile
+AddIcon https://antoniomedeirosdev.github.io/apaxy/theme/icons/text-x-makefile.svg Makefile
 
 # php files do not have a specific media type, fallback to AddIcon
 # ext: php phtml
-AddIcon {FOLDERNAME}/theme/icons/application-x-php.svg .php .phtml
+AddIcon https://antoniomedeirosdev.github.io/apaxy/theme/icons/application-x-php.svg .php .phtml
 
 # python files do not have a specific media type, fallback to AddIcon
 # ext: py
-AddIcon {FOLDERNAME}/theme/icons/text-x-python.svg .py
+AddIcon https://antoniomedeirosdev.github.io/apaxy/theme/icons/text-x-python.svg .py
 
 # ruby files do not have a specific media type, fallback to AddIcon
 # ext: rb
-AddIcon {FOLDERNAME}/theme/icons/application-x-ruby.svg .rb
+AddIcon https://antoniomedeirosdev.github.io/apaxy/theme/icons/application-x-ruby.svg .rb
 
 # ext: sql
-AddIconByType (sql,{FOLDERNAME}/theme/icons/text-x-sql.svg) application/x-sql
+AddIconByType (sql,https://antoniomedeirosdev.github.io/apaxy/theme/icons/text-x-sql.svg) application/x-sql
 
 # ext: xml xsl
 # ext: dtd
-AddIconByType (xml,{FOLDERNAME}/theme/icons/text-xml.svg) application/xml \
+AddIconByType (xml,https://antoniomedeirosdev.github.io/apaxy/theme/icons/text-xml.svg) application/xml \
                                                           application/xml-dtd
 
 
@@ -315,63 +315,63 @@ AddIconByType (xml,{FOLDERNAME}/theme/icons/text-xml.svg) application/xml \
 
 # pkg files do not have a specific media type, fallback to AddIcon
 # ext: pkg
-AddIcon {FOLDERNAME}/theme/icons/package-x-generic.svg .pkg
+AddIcon https://antoniomedeirosdev.github.io/apaxy/theme/icons/package-x-generic.svg .pkg
 
 # ext: bin dms lrf mar so dist distz pkg bpk dump elc deploy
-AddIconByType (bin,{FOLDERNAME}/theme/icons/multipart-encrypted.svg) application/octet-stream
+AddIconByType (bin,https://antoniomedeirosdev.github.io/apaxy/theme/icons/multipart-encrypted.svg) application/octet-stream
 
 # ext: iso
-AddIconByType (cd,{FOLDERNAME}/theme/icons/application-x-cd-image.svg) application/x-iso9660-image
+AddIconByType (cd,https://antoniomedeirosdev.github.io/apaxy/theme/icons/application-x-cd-image.svg) application/x-iso9660-image
 
 # ext: deb udeb
-AddIconByType (deb,{FOLDERNAME}/theme/icons/deb.svg) application/x-debian-package
+AddIconByType (deb,https://antoniomedeirosdev.github.io/apaxy/theme/icons/deb.svg) application/x-debian-package
 
 # msi files do not have a specific media type, fallback to AddIcon
 # ext: msi
-AddIcon {FOLDERNAME}/theme/icons/text-x-install.svg .msi
+AddIcon https://antoniomedeirosdev.github.io/apaxy/theme/icons/text-x-install.svg .msi
 
 # ext: exe dll com bat msi
-AddIconByType (exe,{FOLDERNAME}/theme/icons/application-x-ms-dos-executable.svg) application/x-msdownload
+AddIconByType (exe,https://antoniomedeirosdev.github.io/apaxy/theme/icons/application-x-ms-dos-executable.svg) application/x-msdownload
 
 # ext: dmg
 # ext: mpkg
 # ext: apk
-AddIconByType (package,{FOLDERNAME}/theme/icons/package-x-generic.svg) application/x-apple-diskimage \
+AddIconByType (package,https://antoniomedeirosdev.github.io/apaxy/theme/icons/package-x-generic.svg) application/x-apple-diskimage \
                                                                        application/vnd.apple.installer+xml \
                                                                        application/vnd.android.package-archive
 
 # rpm files do not have a specific media type, fallback to AddIcon
 # ext: rpm
-AddIcon {FOLDERNAME}/theme/icons/rpm.svg .rpm
+AddIcon https://antoniomedeirosdev.github.io/apaxy/theme/icons/rpm.svg .rpm
 
 # ext: sh
-AddIconByType (script,{FOLDERNAME}/theme/icons/text-x-script.svg) application/x-sh
+AddIconByType (script,https://antoniomedeirosdev.github.io/apaxy/theme/icons/text-x-script.svg) application/x-sh
 
 # ext: ttc otf ttf woff2 woff
-AddIconByType (font,{FOLDERNAME}/theme/icons/font-x-generic.svg) font/*
+AddIconByType (font,https://antoniomedeirosdev.github.io/apaxy/theme/icons/font-x-generic.svg) font/*
 
 #
 # archives
 #
 
 # ext: gz
-AddIconByType (gzip,{FOLDERNAME}/theme/icons/application-x-archive.svg) application/x-gzip
+AddIconByType (gzip,https://antoniomedeirosdev.github.io/apaxy/theme/icons/application-x-archive.svg) application/x-gzip
 
 # gzip media type does not include .gzip file extension, fallback to AddIcon
 # ext: gzip
-AddIcon {FOLDERNAME}/theme/icons/application-x-archive.svg .gzip
+AddIcon https://antoniomedeirosdev.github.io/apaxy/theme/icons/application-x-archive.svg .gzip
 
 # ext: rar
-AddIconByType (rar,{FOLDERNAME}/theme/icons/application-x-rar.svg) application/x-rar-compressed
+AddIconByType (rar,https://antoniomedeirosdev.github.io/apaxy/theme/icons/application-x-rar.svg) application/x-rar-compressed
 
 # ext: tar
-AddIconByType (tar,{FOLDERNAME}/theme/icons/application-x-tar.svg) application/x-tar
+AddIconByType (tar,https://antoniomedeirosdev.github.io/apaxy/theme/icons/application-x-tar.svg) application/x-tar
 
 # ext: zip
-AddIconByType (zip,{FOLDERNAME}/theme/icons/application-x-zip.svg) application/zip
+AddIconByType (zip,https://antoniomedeirosdev.github.io/apaxy/theme/icons/application-x-zip.svg) application/zip
 
 # ext: 7z bz bz2 cab
-AddIconByType (archive,{FOLDERNAME}/theme/icons/application-x-archive.svg) application/x-7z-compressed \
+AddIconByType (archive,https://antoniomedeirosdev.github.io/apaxy/theme/icons/application-x-archive.svg) application/x-7z-compressed \
                                                                            application/x-bzip \
                                                                            application/x-bzip2 \
                                                                            application/vnd.ms-cab-compressed
@@ -382,12 +382,12 @@ AddIconByType (archive,{FOLDERNAME}/theme/icons/application-x-archive.svg) appli
 #
 
 # ext: cbr cba cbt cbz cb7
-AddIconByType (text,{FOLDERNAME}/theme/icons/image-x-generic.svg) application/x-cbr
+AddIconByType (text,https://antoniomedeirosdev.github.io/apaxy/theme/icons/image-x-generic.svg) application/x-cbr
 
 # ext: epub
 # ext: prc mobi
 # ext: azw
-AddIconByType (text,{FOLDERNAME}/theme/icons/text-plain.svg) application/epub+zip \
+AddIconByType (text,https://antoniomedeirosdev.github.io/apaxy/theme/icons/text-plain.svg) application/epub+zip \
                                                              application/x-mobipocket-ebook \
                                                              application/vnd.amazon.ebook
 
@@ -398,41 +398,41 @@ AddIconByType (text,{FOLDERNAME}/theme/icons/text-plain.svg) application/epub+zi
 
 # readme files do not have a specific media type, fallback to AddIcon
 # ext: README
-AddIcon {FOLDERNAME}/theme/icons/text-x-readme.svg README
+AddIcon https://antoniomedeirosdev.github.io/apaxy/theme/icons/text-x-readme.svg README
 
 # markdown media type not yet included in apache, fallback to AddIcon
 # ext: markdown md
-#AddIconByType (markdown,{FOLDERNAME}/theme/icons/text-richtext.svg) text/mardown
-AddIcon {FOLDERNAME}/theme/icons/text-richtext.svg .markdown .md
+#AddIconByType (markdown,https://antoniomedeirosdev.github.io/apaxy/theme/icons/text-richtext.svg) text/mardown
+AddIcon https://antoniomedeirosdev.github.io/apaxy/theme/icons/text-richtext.svg .markdown .md
 
 # this directive has to be at the end of the file because the text/* media type is very generic and should not be interpreted before other more specific directives
 # ext: appcache ics ifb css csv html htm n3 txt text conf def list log in dsc rtx sgml sgm tsv t tr roff man me ms ttl uri uris urls vcard curl dcurl mcurl scurl sub fly flx gv 3dml spot jad wmls wml s asm c cc cxx cpp h hh dic f for f77 f90 java nfo opml p pas etx sfv uu vcs vcf
-AddIconByType (text,{FOLDERNAME}/theme/icons/text-plain.svg) text/*
+AddIconByType (text,https://antoniomedeirosdev.github.io/apaxy/theme/icons/text-plain.svg) text/*
 
 
 #
 # default
 #
 
-DefaultIcon {FOLDERNAME}/theme/icons/empty.svg
+DefaultIcon https://antoniomedeirosdev.github.io/apaxy/theme/icons/empty.svg
 
 
 #
 # theme files
 #
 
-HeaderName {FOLDERNAME}/theme/header.html
-ReadmeName {FOLDERNAME}/theme/footer.html
-IndexStyleSheet {FOLDERNAME}/theme/style.css
+HeaderName https://antoniomedeirosdev.github.io/apaxy/theme/header.html
+ReadmeName https://antoniomedeirosdev.github.io/apaxy/theme/footer.html
+IndexStyleSheet https://antoniomedeirosdev.github.io/apaxy/theme/style.css
 
 
 #
 # error pages
 #
 
-ErrorDocument 400 {FOLDERNAME}/theme/400.html
-ErrorDocument 403 {FOLDERNAME}/theme/403.html
-ErrorDocument 404 {FOLDERNAME}/theme/404.html
-ErrorDocument 408 {FOLDERNAME}/theme/408.html
-ErrorDocument 500 {FOLDERNAME}/theme/500.html
-ErrorDocument 502 {FOLDERNAME}/theme/502.html
+ErrorDocument 400 https://antoniomedeirosdev.github.io/apaxy/theme/400.html
+ErrorDocument 403 https://antoniomedeirosdev.github.io/apaxy/theme/403.html
+ErrorDocument 404 https://antoniomedeirosdev.github.io/apaxy/theme/404.html
+ErrorDocument 408 https://antoniomedeirosdev.github.io/apaxy/theme/408.html
+ErrorDocument 500 https://antoniomedeirosdev.github.io/apaxy/theme/500.html
+ErrorDocument 502 https://antoniomedeirosdev.github.io/apaxy/theme/502.html
