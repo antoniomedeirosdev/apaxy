@@ -85,6 +85,8 @@ AddIcon https://antoniomedeirosdev.github.io/apaxy/theme/icons/application-x-tar
 
 AddIcon https://antoniomedeirosdev.github.io/apaxy/theme/icons/package-x-generic.svg .pkg.tar.zst
 
+AddIcon https://antoniomedeirosdev.github.io/apaxy/theme/icons/application-x-trash.svg .old
+
 
 
 #
