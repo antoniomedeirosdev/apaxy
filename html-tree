@@ -1,0 +1,23 @@
+#!/bin/bash
+# This script produces a static HTML directory listing from the current folder
+
+CURRENT_FOLDER_PATH="$(pwd)"
+CURRENT_FOLDER_NAME="${CURRENT_FOLDER_PATH##*/}"
+TREE_FOLDER="$CURRENT_FOLDER_NAME-tree"
+
+# https://stackoverflow.com/a/78726693/1657502
+# https://stackoverflow.com/a/66052975/1657502
+docker run --name temp_server --rm -d -v "$CURRENT_FOLDER_PATH:/usr/local/apache2/htdocs/" -p 8080:8080 antoniomedeiros/apaxy:latest >/dev/null 2>&1
+
+cd ..
+# https://askubuntu.com/a/720334/560233
+wget -q -r --no-parent --reject '*?C=*' http://localhost:8080/
+mv localhost:8080 $TREE_FOLDER
+rm -rf localhost:8080
+
+# https://askubuntu.com/a/269818/560233
+rsync -a $TREE_FOLDER/ $CURRENT_FOLDER_NAME/
+
+# Clean up
+rm -rf $TREE_FOLDER
+docker stop temp_server >/dev/null 2>&1
