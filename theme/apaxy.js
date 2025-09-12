@@ -79,23 +79,31 @@
 			//e.g. 'esc', 'backspace', 'up arrow'
 		}
 	});
-
 })(document);
 
 // generate a breadcrumb
 var uri = window.location.pathname.substr(1);
 var arr = uri.split('/');
 var url = ""
-var bread = '<li><strong><a href="/">Home</a></strong></li>';
+var bread = "<li class='breadcrumb-item'><a class='link-body-emphasis' href='/'><i class='bi bi-house-door-fill'></i><span class='visually-hidden'>Home</span></a></li>";
 var cont = 1;
 arr.forEach(function(value){
         url = url + '/' + value;
         if(value != ''){
             if(arr.length == cont+1)
-                bread += "<li class='active'>"+decodeURI(value)+"</li>";
+                bread += "<li class='breadcrumb-item active'>"+decodeURI(value)+"</li>";
             else
-                bread += "<li><a href='"+url+"'>"+decodeURI(value)+"</a></li>";
+                bread += "<li class='breadcrumb-item' aria-current='page'><a class='link-body-emphasis fw-semibold text-decoration-none' href='"+url+"'>"+decodeURI(value)+"</a></li>";
         }
         cont++;
 });
 document.getElementById("breadcrumb").innerHTML = bread;
+
+// Bootstrap's tables are opt-in
+const tables = document.getElementsByTagName("table");
+const table = tables[0];
+table.classList.add("table");
+table.classList.add("table-striped");
+table.classList.add("table-hover");
+
+document.querySelector("th[valign='top']").innerHTML = '';
