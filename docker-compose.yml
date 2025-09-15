@@ -1,6 +1,6 @@
 services:
   apaxy:
-    image: apaxy
+    image: antoniomedeiros/apaxy
     build:
       context: .
       args:
