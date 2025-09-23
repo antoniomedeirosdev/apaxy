@@ -40,6 +40,7 @@ IndexHeadInsert "\
         <meta charset='utf-8'>\
         <meta name='viewport' content='width=device-width, initial-scale=1'>\
         <link rel='shortcut icon' href='https://antoniomedeirosdev.github.io/apaxy/theme/favicon.ico' />\
+        <link rel='stylesheet' href='https://fonts.googleapis.com/css?family=Roboto:300,400,500,700'>\
         <link rel='stylesheet' href='https://cdn.jsdelivr.net/npm/bootswatch@5.3.8/dist/materia/bootstrap.min.css' integrity='sha256-mu98v5fccsJNIUTPlTr7uxAtMoyYpooKYrjeieHZRJg=' crossorigin='anonymous'>\
         <link rel='stylesheet' href='https://cdn.jsdelivr.net/npm/bootstrap-icons@1.13.1/font/bootstrap-icons.min.css'>\
         <link rel='stylesheet' href='https://antoniomedeirosdev.github.io/apaxy/theme/style.css' />"
