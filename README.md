@@ -1,3 +1,41 @@
+# html-tree
+
+[GitHub Pages](https://pages.github.com/) and [GitLab Pages](https://docs.gitlab.com/user/project/pages/) usually are used to host sites. But you can also use them to host files for download only. The problem with this is that they don't produce directory listing pages, like the ones produced by the [Apache web server](https://httpd.apache.org/). Fortunately, [it's possible to generate directory listing pages](https://stackoverflow.com/a/78726693/1657502) (and customized ones!) using a combination of [Linux](https://linuxkamarada.com/), [Docker](https://www.docker.com/) and [**wget**](https://man7.org/linux/man-pages/man1/wget.1.html).
+
+To meet this need of mine, I created this fork of [Apaxy](https://github.com/oupala/apaxy) and the [**html-tree**](html-tree) shell script.
+
+You can see directory listing pages produced by it here:
+
+- <https://kamarada.github.io/repo/>
+
+If you want to use it, you can simply do this:
+
+1. I assume you are using some Linux distribution (e.g. [Linux Kamarada](https://linuxkamarada.com/)), [**wget**](https://man7.org/linux/man-pages/man1/wget.1.html) comes out of the box in most distributions, and you will need to install [Docker](https://www.docker.com/) as well (this solution may work on [WSL](https://linuxkamarada.com/en/2025/03/26/windows-subsystem-for-linux-wsl-the-best-way-to-use-linux-tools-on-windows/), I just haven't tested it).
+2. Download the [**html-tree**](https://raw.githubusercontent.com/antoniomedeirosdev/apaxy/refs/heads/develop/html-tree) shell script, save it in some folder referenced by your `$PATH` environment variable.
+3. Open a terminal and [**cd**](https://man7.org/linux/man-pages/man1/cd.1p.html) to the directory whose contents you want to list.
+4. Run **html-tree** and it will produce many `index.html` files, one per directory.
+5. If you are doing this for GitHub/GitLab Pages, you can add the new files and commit them.
+
+Notes:
+
+- It should not be necessary, but in case you want to recursively delete `index.html` files before running **html-tree**, you can just use [**find**](https://man7.org/linux/man-pages/man1/find.1.html):
+
+```sh
+find . -name 'index.html*' -delete
+```
+
+- The [**html-tree**](html-tree) shell script uses the [antoniomedeiros/apaxy](https://hub.docker.com/r/antoniomedeiros/apaxy) Docker image hosted at Docker Hub. If you [search for apaxy there](https://hub.docker.com/search?q=apaxy), you are going to find many other Apaxy forks. You may change your local copy of the **html-tree** script to use another fork.
+
+- Feel free to fork this repository of mine and adjust it to your needs. It's [free software](https://www.gnu.org/philosophy/free-sw.html)!
+
+- The directory listing pages produced by this solution reference files hosted at <https://antoniomedeirosdev.github.io/apaxy/>, so you can't use them offline.
+
+- You can also use this fork of Apaxy if you have an Apache web server instance and you want to customize its directory listing pages. I haven't tested this use case scenario, but it should work as well.
+
+Now the upstream README, from [oupala/apaxy](https://github.com/oupala/apaxy):
+
+&#9986; -------------------------------------------------------------------------------- &#9986;
+
 # Apaxy
 
 apaxy is a customisable theme built to enhance the experience of browsing web directories. It uses the `mod_autoindex` Apache module - and some css - to override the default style of a directory listing.
