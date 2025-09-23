@@ -8,6 +8,8 @@ You can see directory listing pages produced by it here:
 
 - <https://kamarada.github.io/repo/>
 
+![Screenshot](apaxy-screenshot.png)
+
 If you want to use it, you can simply do this:
 
 1. I assume you are using some Linux distribution (e.g. [Linux Kamarada](https://linuxkamarada.com/)), [**wget**](https://man7.org/linux/man-pages/man1/wget.1.html) comes out of the box in most distributions, and you will need to install [Docker](https://www.docker.com/) as well (this solution may work on [WSL](https://linuxkamarada.com/en/2025/03/26/windows-subsystem-for-linux-wsl-the-best-way-to-use-linux-tools-on-windows/), I just haven't tested it).
